@@ -1,0 +1,358 @@
+.chart-container {
+  background: rgba(26, 26, 46, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.chart-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  gap: 1rem;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(102, 126, 234, 0.2);
+  border-top-color: #667eea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-state p {
+  color: #a0a0b0;
+  font-size: 1rem;
+}
+
+.legend {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.legend-item.bullish {
+  color: #26a69a;
+  border: 1px solid rgba(38, 166, 154, 0.3);
+}
+
+.legend-item.bearish {
+  color: #ef5350;
+  border: 1px solid rgba(239, 83, 80, 0.3);
+}
+
+.legend-item.neutral {
+  color: #ffd700;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.chart-wrapper {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+/* Make prediction markers hoverable with pointer cursor */
+.chart-wrapper .recharts-reference-dot {
+  cursor: pointer;
+}
+
+.prediction-markers-container {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 30px;
+  height: 40px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.prediction-marker {
+  position: absolute;
+  top: 5px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 3px solid;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  pointer-events: all;
+  transform: translateX(-50%);
+}
+
+.prediction-marker:hover {
+  transform: translateX(-50%) scale(1.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.marker-icon {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.marker-popup {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10px;
+  background: rgba(26, 26, 46, 0.98);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(102, 126, 234, 0.5);
+  border-radius: 8px;
+  padding: 0.75rem;
+  white-space: nowrap;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  animation: popupFadeIn 0.2s ease-out;
+}
+
+@keyframes popupFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.marker-popup::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: rgba(26, 26, 46, 0.98);
+}
+
+.marker-popup-date {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.marker-popup-hint {
+  color: #a0a0b0;
+  font-size: 0.75rem;
+}
+
+.zoom-hint {
+  text-align: center;
+  margin-top: 1rem;
+  color: #a0a0b0;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.custom-tooltip {
+  background: rgba(26, 26, 46, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(102, 126, 234, 0.5);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.tooltip-date {
+  color: #a0a0b0;
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+}
+
+.tooltip-price {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.chart {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.markers-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.predictions-timeline {
+  margin-top: 2rem;
+}
+
+.predictions-timeline h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.timeline-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 1rem;
+  background: rgba(15, 15, 30, 0.4);
+  border-radius: 12px;
+}
+
+.timeline-items::-webkit-scrollbar {
+  width: 8px;
+}
+
+.timeline-items::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+.timeline-items::-webkit-scrollbar-thumb {
+  background: rgba(102, 126, 234, 0.5);
+  border-radius: 4px;
+}
+
+.timeline-items::-webkit-scrollbar-thumb:hover {
+  background: rgba(102, 126, 234, 0.7);
+}
+
+.no-predictions {
+  text-align: center;
+  color: #a0a0b0;
+  padding: 2rem;
+  font-style: italic;
+}
+
+.timeline-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.timeline-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.timeline-date {
+  font-size: 0.85rem;
+  color: #a0a0b0;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+
+.media-icon {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .chart-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .legend {
+    flex-wrap: wrap;
+  }
+
+  .timeline-items {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Zoom Controls */
+.zoom-controls {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.zoom-button {
+  background: rgba(102, 126, 234, 0.2);
+  border: 1px solid rgba(102, 126, 234, 0.4);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  min-width: 40px;
+}
+
+.zoom-button:hover {
+  background: rgba(102, 126, 234, 0.3);
+  border-color: rgba(102, 126, 234, 0.6);
+  transform: translateY(-1px);
+}
+
+.zoom-button:active {
+  transform: translateY(0);
+}
+
+/* Timeline Price Display */
+.timeline-price {
+  color: #00d4aa;
+  font-weight: 600;
+  font-size: 0.9rem;
+}

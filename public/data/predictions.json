@@ -1,0 +1,215 @@
+{
+  "coins": [
+    {
+      "id": "BTC",
+      "name": "Bitcoin",
+      "ticker": "BTC",
+      "color": "#F7931A",
+      "contractAddress": null
+    },
+    {
+      "id": "ETH",
+      "name": "Ethereum",
+      "ticker": "ETH",
+      "color": "#627EEA",
+      "contractAddress": null
+    },
+    {
+      "id": "DSYNC",
+      "name": "Destra",
+      "ticker": "DSYNC",
+      "color": "#00D4AA",
+      "contractAddress": "0xf94e7d0710709388bce3161c32b4eea56d3f91cc"
+    }
+  ],
+  "predictions": [
+    {
+      "coin": "DSYNC",
+      "date": "2025-01-29T23:21:00",
+      "sentiment": "bullish",
+      "mediaType": "image",
+      "mediaUrl": "https://res.cloudinary.com/dbxv4gcdp/image/upload/v1762846054/crypto-predictions/psnnoehlbdl5tokxsvoq.jpg",
+      "sourceUrl": "https://x.com/ZssBecker/status/1884600185508008345",
+      "notes": "",
+      "id": 1762846826845,
+      "createdAt": "2025-11-11T07:40:26.845Z"
+    },
+    {
+      "coin": "DSYNC",
+      "date": "2025-05-14T05:42:00",
+      "sentiment": "bullish",
+      "mediaType": "image",
+      "mediaUrl": "https://res.cloudinary.com/dbxv4gcdp/image/upload/v1762846265/crypto-predictions/ca5wekicag75t8armapr.jpg",
+      "sourceUrl": "https://x.com/ZssBecker/status/1922538906005733748",
+      "notes": "",
+      "id": 1762846870752,
+      "createdAt": "2025-11-11T07:41:10.752Z"
+    },
+    {
+      "coin": "DSYNC",
+      "date": "2025-02-11T10:10:00",
+      "sentiment": "bullish",
+      "mediaType": "image",
+      "mediaUrl": "https://res.cloudinary.com/dbxv4gcdp/image/upload/v1762846905/889089966724227504_l0zmsq.png",
+      "sourceUrl": "https://x.com/ZssBecker/status/1889089966724227504",
+      "notes": "",
+      "id": 1762846974038,
+      "createdAt": "2025-11-11T07:42:54.038Z"
+    },
+    {
+      "coin": "DSYNC",
+      "date": "2025-10-03T13:38:00",
+      "sentiment": "bullish",
+      "mediaType": "image",
+      "mediaUrl": "https://res.cloudinary.com/dbxv4gcdp/image/upload/v1762846906/973955853507276916_npgoll.png",
+      "sourceUrl": "https://x.com/ZssBecker/status/1973955853507276916",
+      "notes": "",
+      "id": 1762847054816,
+      "createdAt": "2025-11-11T07:44:14.816Z"
+    },
+    {
+      "coin": "DSYNC",
+      "date": "2025-01-31T05:29:00",
+      "sentiment": "bullish",
+      "mediaType": "image",
+      "mediaUrl": "https://res.cloudinary.com/dbxv4gcdp/image/upload/v1762846906/1885366578679521772_q70jbh.png",
+      "sourceUrl": "https://x.com/ZssBecker/status/1885366578679521772",
+      "notes": "",
+      "id": 1762847110413,
+      "createdAt": "2025-11-11T07:45:10.413Z"
+    },
+    {
+      "coin": "DSYNC",
+      "date": "2025-02-26T10:43:00",
+      "sentiment": "bullish",
+      "mediaType": "image",
+      "mediaUrl": "https://res.cloudinary.com/dbxv4gcdp/image/upload/v1762846906/1894661930507223212_b6emm6.png",
+      "sourceUrl": "https://x.com/ZssBecker/status/1894661930507223212",
+      "notes": "",
+      "id": 1762847161083,
+      "createdAt": "2025-11-11T07:46:01.083Z"
+    },
+    {
+      "coin": "DSYNC",
+      "date": "2025-03-02T22:15:00",
+      "sentiment": "bullish",
+      "mediaType": "image",
+      "mediaUrl": "https://res.cloudinary.com/dbxv4gcdp/image/upload/v1762846906/1896191741260337254_ym6hom.png",
+      "sourceUrl": "https://x.com/ZssBecker/status/1896191741260337254",
+      "notes": "",
+      "id": 1762847289266,
+      "createdAt": "2025-11-11T07:48:09.266Z"
+    },
+    {
+      "coin": "DSYNC",
+      "date": "2025-03-06T00:00:00",
+      "sentiment": "bullish",
+      "mediaType": "image",
+      "mediaUrl": "https://res.cloudinary.com/dbxv4gcdp/image/upload/v1762846908/1897335851996340299_jewzxm.png",
+      "sourceUrl": "https://x.com/ZssBecker/status/1897335851996340299",
+      "notes": "",
+      "id": 1762847341948,
+      "createdAt": "2025-11-11T07:49:01.948Z"
+    },
+    {
+      "coin": "DSYNC",
+      "date": "2025-04-13T00:18:00",
+      "sentiment": "bullish",
+      "mediaType": "image",
+      "mediaUrl": "https://res.cloudinary.com/dbxv4gcdp/image/upload/v1762846908/1911104202899599367_czl8nx.png",
+      "sourceUrl": "https://x.com/ZssBecker/status/1911104202899599367",
+      "notes": "",
+      "id": 1762847382716,
+      "createdAt": "2025-11-11T07:49:42.716Z"
+    },
+    {
+      "coin": "DSYNC",
+      "date": "2025-05-09T00:43:00",
+      "sentiment": "bullish",
+      "mediaType": "image",
+      "mediaUrl": "https://res.cloudinary.com/dbxv4gcdp/image/upload/v1762846912/1920497777487860217_haibq0.png",
+      "sourceUrl": "https://x.com/ZssBecker/status/1920497777487860217",
+      "notes": "",
+      "id": 1762847419615,
+      "createdAt": "2025-11-11T07:50:19.615Z"
+    },
+    {
+      "coin": "DSYNC",
+      "date": "2025-08-10T03:17:00",
+      "sentiment": "bullish",
+      "mediaType": "image",
+      "mediaUrl": "https://res.cloudinary.com/dbxv4gcdp/image/upload/v1762846912/1954230647930622244_i2ipcs.png",
+      "sourceUrl": "https://x.com/ZssBecker/status/1954230647930622244",
+      "notes": "",
+      "id": 1762847487506,
+      "createdAt": "2025-11-11T07:51:27.506Z"
+    },
+    {
+      "coin": "DSYNC",
+      "date": "2025-04-23T00:06:00",
+      "sentiment": "bullish",
+      "mediaType": "image",
+      "mediaUrl": "https://res.cloudinary.com/dbxv4gcdp/image/upload/v1762847574/1914682111253963092_rxzwnk.png",
+      "sourceUrl": "https://x.com/ZssBecker/status/1914682111253963092",
+      "notes": "",
+      "id": 1762847610894,
+      "createdAt": "2025-11-11T07:53:30.894Z"
+    },
+    {
+      "coin": "DSYNC",
+      "date": "2025-02-16T01:20:00",
+      "sentiment": "bullish",
+      "mediaType": "image",
+      "mediaUrl": "https://res.cloudinary.com/dbxv4gcdp/image/upload/v1762847720/1890768182975066558_sn4ajn.png",
+      "sourceUrl": "https://x.com/ZssBecker/status/1890768182975066558",
+      "notes": "",
+      "id": 1762847744649,
+      "createdAt": "2025-11-11T07:55:44.649Z"
+    },
+    {
+      "coin": "DSYNC",
+      "date": "2025-02-04T06:07:00",
+      "sentiment": "bullish",
+      "mediaType": "image",
+      "mediaUrl": "https://res.cloudinary.com/dbxv4gcdp/image/upload/v1762847816/1886491720298180863_an8ihb.png",
+      "sourceUrl": "https://x.com/ZssBecker/status/1886491720298180863",
+      "notes": "",
+      "id": 1762847841261,
+      "createdAt": "2025-11-11T07:57:21.261Z"
+    },
+    {
+      "coin": "DSYNC",
+      "date": "2025-01-05T22:40:00",
+      "sentiment": "bullish",
+      "mediaType": "video",
+      "mediaUrl": "https://res.cloudinary.com/dbxv4gcdp/video/upload/v1762848172/Tzb3HCdS8_T-K0kD_et94aa.mp4",
+      "sourceUrl": "https://www.youtube.com/watch?v=eBxDLWgmy0Y",
+      "notes": "",
+      "id": 1762848363228,
+      "createdAt": "2025-11-11T08:06:03.228Z"
+    },
+    {
+      "coin": "DSYNC",
+      "date": "2025-01-27T17:55:00",
+      "sentiment": "bullish",
+      "mediaType": "video",
+      "mediaUrl": "https://res.cloudinary.com/dbxv4gcdp/video/upload/v1762849391/2ZJ0v1vXKFY_eetpht.mp4",
+      "sourceUrl": "https://www.youtube.com/watch?v=2ZJ0v1vXKFY",
+      "notes": "",
+      "id": 1762849417472,
+      "createdAt": "2025-11-11T08:23:37.472Z"
+    },
+    {
+      "coin": "DSYNC",
+      "date": "2025-11-10T22:37:00",
+      "sentiment": "bullish",
+      "mediaType": "image",
+      "mediaUrl": "https://res.cloudinary.com/dbxv4gcdp/image/upload/v1762851382/1987847009466728774_abghbx.png",
+      "sourceUrl": "https://x.com/ZssBecker/status/1987847009466728774",
+      "notes": "",
+      "id": 1762851808653,
+      "createdAt": "2025-11-11T09:03:28.653Z"
+    }
+  ],
+  "exportedAt": "2025-11-11T09:03:58.806Z"
+}

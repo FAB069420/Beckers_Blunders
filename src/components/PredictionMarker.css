@@ -1,0 +1,63 @@
+.prediction-marker {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: all 0.3s;
+  z-index: 10;
+  pointer-events: all;
+}
+
+.marker-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  border: 2px solid;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.prediction-marker.bullish .marker-icon {
+  color: #26a69a;
+  border-color: #26a69a;
+}
+
+.prediction-marker.bearish .marker-icon {
+  color: #ef5350;
+  border-color: #ef5350;
+}
+
+.prediction-marker.neutral .marker-icon {
+  color: #ffd700;
+  border-color: #ffd700;
+}
+
+.prediction-marker:hover {
+  transform: scale(1.3);
+  z-index: 20;
+}
+
+.prediction-marker:hover .marker-icon {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
+}
+
+.prediction-marker.bullish:hover .marker-icon {
+  background: rgba(38, 166, 154, 0.2);
+  box-shadow: 0 6px 24px rgba(38, 166, 154, 0.5);
+}
+
+.prediction-marker.bearish:hover .marker-icon {
+  background: rgba(239, 83, 80, 0.2);
+  box-shadow: 0 6px 24px rgba(239, 83, 80, 0.5);
+}
+
+.prediction-marker.neutral:hover .marker-icon {
+  background: rgba(255, 215, 0, 0.2);
+  box-shadow: 0 6px 24px rgba(255, 215, 0, 0.5);
+}
